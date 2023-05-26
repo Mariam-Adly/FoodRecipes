@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopCell" customModule="FoodRecipes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aG-1k-OX8">
+                        <rect key="frame" x="-1" y="-0.6666666666666714" width="162" height="211.33333333333337"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ii-wS-lPG">
+                                <rect key="frame" x="13" y="11.666666666666671" width="129.66666666666666" height="148"/>
+                                <color key="tintColor" red="0.96078437569999997" green="0.96078437569999997" blue="0.96078437569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmv-ZY-N97">
+                                <rect key="frame" x="0.0" y="169.66666666666666" width="155.33333333333334" height="22.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="centerY" secondItem="6aG-1k-OX8" secondAttribute="centerY" constant="-20" id="Acv-Xj-HnG"/>
+                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="height" secondItem="6aG-1k-OX8" secondAttribute="height" multiplier="0.7" id="LEa-bh-TBq"/>
+                            <constraint firstItem="kmv-ZY-N97" firstAttribute="width" secondItem="2Ii-wS-lPG" secondAttribute="width" multiplier="1.2" id="Orv-Rr-O6L"/>
+                            <constraint firstItem="kmv-ZY-N97" firstAttribute="centerX" secondItem="2Ii-wS-lPG" secondAttribute="centerX" id="Q2N-Z2-ho9"/>
+                            <constraint firstItem="kmv-ZY-N97" firstAttribute="height" secondItem="2Ii-wS-lPG" secondAttribute="height" multiplier="0.152913" id="c6G-Sr-q5Z"/>
+                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="width" secondItem="6aG-1k-OX8" secondAttribute="width" multiplier="0.8" id="gmj-C3-0ae"/>
+                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="leading" secondItem="6aG-1k-OX8" secondAttribute="leading" constant="13" id="iDi-8B-wEQ"/>
+                            <constraint firstItem="kmv-ZY-N97" firstAttribute="top" secondItem="2Ii-wS-lPG" secondAttribute="bottom" constant="10" id="wrg-wx-WUc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="6aG-1k-OX8" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-12.5" id="Vfx-Jq-F4Z"/>
+                <constraint firstItem="6aG-1k-OX8" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.98" constant="5" id="c4b-9W-Hke"/>
+                <constraint firstItem="6aG-1k-OX8" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="xOn-ab-lpJ"/>
+                <constraint firstItem="6aG-1k-OX8" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.887387" constant="25" id="zWK-b1-yzx"/>
+            </constraints>
+            <size key="customSize" width="160" height="210"/>
+            <connections>
+                <outlet property="backView" destination="6aG-1k-OX8" id="vPf-tf-WhA"/>
+                <outlet property="categoryImage" destination="2Ii-wS-lPG" id="4r3-Pp-86r"/>
+                <outlet property="categoryName" destination="kmv-ZY-N97" id="7iY-Mp-mYi"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="45.070422535211272"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

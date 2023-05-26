@@ -11,17 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let n = Network()
-        n.getMealsFromApi(url: "https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=breakfast") { meals, error in
-            if let meals = meals{
-                print(meals[0].name ?? "no meal")
-            }
-        }
+        // Do any additional setup after loading the view.
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        print("done")
     }
 
 
