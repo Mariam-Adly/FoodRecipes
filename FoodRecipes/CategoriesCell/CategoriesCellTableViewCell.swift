@@ -27,7 +27,7 @@ class CategoriesCellTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+       
     }
     
     func setUpCell(mealName:String,chefName:String,foodType:String,foodRate:Int){
@@ -37,10 +37,17 @@ class CategoriesCellTableViewCell: UITableViewCell {
         self.foodRate.text = String("servings:\(foodRate)")
     }
     
+
+    func configCell(meal:Meal)
+    {
+        mealName.text = meal.name
+        foodRate.text = String("servings:\(meal.num_servings)")
+    }
     @IBAction func favBtnAction(_ sender: Any) {
     }
 //    override func layoutSubviews() {
 //        super.layoutSubviews()
 //        contentView.bounds = contentView.frame.inset(by: UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0))
 //    }
+    
 }
