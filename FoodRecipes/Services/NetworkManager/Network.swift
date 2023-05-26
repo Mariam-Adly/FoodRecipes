@@ -9,8 +9,6 @@ import Foundation
 import Alamofire
 
 class Network{
-    
-   
     let headers:HTTPHeaders = [
         "X-RapidAPI-Key": "f4e14f0c71msh56b275f47a33083p1bf7d4jsn2d94b368718d",
         "X-RapidAPI-Host": "tasty.p.rapidapi.com"
@@ -24,7 +22,7 @@ class Network{
                         if let data = data{
                             let jsonData =  try JSONDecoder().decode(MealModel.self, from: data)
                             if let results = jsonData.results{
-                                completionHandler(jsonData.results,nil)
+                                completionHandler(results,nil)
                             }
                         }
                     }catch{
@@ -37,4 +35,4 @@ class Network{
             }
     }
 }
-//https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=breakfast
+

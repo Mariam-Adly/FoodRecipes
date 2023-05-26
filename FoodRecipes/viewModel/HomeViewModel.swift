@@ -12,7 +12,7 @@ class HomeVieModel{
     let network = Network()
     
     func getHomeMealsByCategory(category:String){
-        network.getMealsFromApi(url: "\(K.baseUrl)\(category)") { meals, error in
+        network.getMealsFromApi(url: "\(Constant.baseUrl)\(category)") { meals, error in
             if let meals = meals{
                 self.mealsForCtegory = meals
                 DispatchQueue.main.async {

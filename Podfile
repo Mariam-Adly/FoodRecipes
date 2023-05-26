@@ -15,5 +15,5 @@ pod 'Alamofire'
   target 'FoodRecipesUITests' do
     # Pods for testing
   end
-
+pod 'SDWebImage', '~> 5.0'
 end
