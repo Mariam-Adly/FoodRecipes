@@ -222,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				8CF8848A2A20E16800D7CB7F /* MealModel.swift */,
+				BCFF17462A20E9E000F58A03 /* Categories.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,7 +283,6 @@
 			isa = PBXGroup;
 			children = (
 				BCFE5B012A20E3D9008CC802 /* View */,
-				BCFF17462A20E9E000F58A03 /* Categories.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";

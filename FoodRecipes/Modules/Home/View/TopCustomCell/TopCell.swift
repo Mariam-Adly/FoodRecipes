@@ -20,5 +20,17 @@ class TopCell: UICollectionViewCell {
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryName: UILabel!
     
-   
+    func configure(category:Category) {
+        if(category.isSelected == true)
+        {
+            categoryImage.backgroundColor = UIColor(named: "orange")
+        }
+        else{
+            categoryImage.backgroundColor = UIColor(named: "orange")
+        }
+    }
+    
+    
+    
+  
 }

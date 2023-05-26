@@ -10,9 +10,12 @@ import UIKit
 class Category {
     var name:String?
     var image:String?
-    init(name:String, image:String)
+    var isSelected:Bool?
+    
+    init(name:String, image:String, isSelected:Bool=false)
       {
           self.image = image
+          self.isSelected = false
           self.name = name
       }
 }
