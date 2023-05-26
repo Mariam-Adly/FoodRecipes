@@ -168,7 +168,6 @@
 				8C4344CD2A20F774001E499C /* viewModel */,
 				8CF8848C2A20E46600D7CB7F /* Services */,
 				8CF884892A20E11D00D7CB7F /* Models */,
-				44ABFE372A20D766001CE419 /* CategoriesCell */,
 				BCFE5AFC2A20E36B008CC802 /* Modules */,
 				BCFE5AF92A20E304008CC802 /* Utilities */,
 				442F3CAF2A20D0B400CAAAE3 /* AppDelegate.swift */,
@@ -207,7 +206,8 @@
 				BC8070802A21063C006EB936 /* CategoriesCellTableViewCell.xib */,
 				BC80707E2A210634006EB936 /* CategoriesCellTableViewCell.swift */,
 			);
-			path = CategoriesCell;
+			name = CategoriesCell;
+			path = ../../../CategoriesCell;
 			sourceTree = "<group>";
 		};
 		8C4344CD2A20F774001E499C /* viewModel */ = {
@@ -270,6 +270,7 @@
 		BCFE5B012A20E3D9008CC802 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44ABFE372A20D766001CE419 /* CategoriesCell */,
 				BCA5C1F72A20E0990012CC5E /* TopCustomCell */,
 				BCFE5AFE2A20E3CE008CC802 /* HomeViewController.xib */,
 				BCFF17432A20E6E500F58A03 /* HomeViewController.swift */,

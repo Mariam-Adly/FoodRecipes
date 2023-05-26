@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    let viewModel = HomeVieModel()
     let categories: [Category] = [Category(name: "Popular", image: "fire"),Category(name: "Breakfast", image: "breakfast"),Category(name: "Lunch", image: "lunch-box"),Category(name: "Dinner", image: "dinner"),Category(name: "Dessert", image: "cake")]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,11 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         collectionView.dataSource = self
         collectionView.delegate = self
+        viewModel.bindedMealResult = {
+            self.tableView.reloadData()
+        }
+        viewModel.getHomeMealsByCategory(category: "middle_eastern")
+    
         print("loded")
     }
     
@@ -44,6 +50,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriesCellTableViewCell") as! CategoriesCellTableViewCell
+        
+        let meal = viewModel.getMealByIndex(index: indexPath.row)
+        cell.configCell(meal: meal)
         return cell
     }
     
@@ -68,5 +77,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.size.width/6, height: collectionView.frame.size.height)
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    }
+    func changeImageBackground(cell:TopCell)
+    {
+        cell.categoryImage.backgroundColor = UIColor(named: "orange")
+    }
 }

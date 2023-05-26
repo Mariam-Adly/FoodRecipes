@@ -19,4 +19,6 @@ class TopCell: UICollectionViewCell {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryName: UILabel!
+    
+   
 }

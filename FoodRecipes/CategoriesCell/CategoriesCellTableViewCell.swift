@@ -33,4 +33,10 @@ class CategoriesCellTableViewCell: UITableViewCell {
     @IBAction func favBtnAction(_ sender: Any) {
     }
     
+
+    func configCell(meal:Meal)
+    {
+        mealName.text = meal.name
+        foodRate.text = String("servings:\(meal.num_servings)")
+    }
 }
