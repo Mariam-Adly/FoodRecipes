@@ -20,7 +20,7 @@ class CategoriesCellTableViewCell: UITableViewCell {
         // Initialization code
          cellView.layer.cornerRadius = 20
          cellView.layer.masksToBounds = true
-        favBtn.layer.cornerRadius = 20
+        favBtn.layer.cornerRadius = favBtn.frame.width*0.3
         favBtn.layer.masksToBounds = true
     }
 
@@ -30,7 +30,11 @@ class CategoriesCellTableViewCell: UITableViewCell {
        
     }
     
-    @IBAction func favBtnAction(_ sender: Any) {
+    func setUpCell(mealName:String,chefName:String,foodType:String,foodRate:Int){
+        self.mealName.text = mealName
+        self.chefName.text = chefName
+        self.foodType.text = foodType
+        self.foodRate.text = String("servings:\(foodRate)")
     }
     
 
@@ -39,4 +43,11 @@ class CategoriesCellTableViewCell: UITableViewCell {
         mealName.text = meal.name
         foodRate.text = String("servings:\(meal.num_servings)")
     }
+    @IBAction func favBtnAction(_ sender: Any) {
+    }
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        contentView.bounds = contentView.frame.inset(by: UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0))
+//    }
+    
 }
