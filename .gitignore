@@ -494,28 +494,3 @@ Pods/Target Support Files/lottie-ios/lottie-ios-umbrella.h
 Pods/Target Support Files/lottie-ios/lottie-ios.debug.xcconfig
 Pods/Target Support Files/lottie-ios/lottie-ios.modulemap
 Pods/Target Support Files/lottie-ios/lottie-ios.release.xcconfig
-Pods/lottie-ios/Sources/Private/CoreAnimation/Animations/CAAnimation+TimingConfiguration.swift
-Pods/lottie-ios/Sources/Private/CoreAnimation/Animations/CALayer+addAnimation.swift
-Pods/lottie-ios/Sources/Private/CoreAnimation/Extensions/CALayer+fillBounds.swift
-Pods/lottie-ios/Sources/Private/CoreAnimation/Extensions/KeyframeGroup+exactlyOneKeyframe.swift
-Pods/lottie-ios/Sources/Private/CoreAnimation/Extensions/Keyframes+combined.swift
-Pods/lottie-ios/Sources/Private/CoreAnimation/Layers/CALayer+setupLayerHierarchy.swift
-Pods/lottie-ios/Sources/Private/CoreAnimation/Layers/LayerModel+makeAnimationLayer.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Archive+BackingConfiguration.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Archive+Helpers.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Archive+MemoryFile.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Archive+Progress.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Archive+Reading.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Archive+ReadingDeprecated.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Archive+Writing.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Archive+WritingDeprecated.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Archive+ZIP64.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Data+Compression.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Data+CompressionDeprecated.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Data+Serialization.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Entry+Serialization.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/Entry+ZIP64.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/FileManager+ZIP.swift
-Pods/lottie-ios/Sources/Private/Model/DotLottie/ZipFoundation/URL+ZIP.swift
-Pods/lottie-ios/Sources/Private/Utility/Extensions/BlendMode+Filter.swift
-Pods/lottie-ios/Sources/Private/Utility/Extensions/CGColor+RGB.swift
