@@ -7,8 +7,9 @@
 
 import Foundation
 class Instruction : Codable{
-    var display_text: String?
+    var displayText: String?
+
     enum CodingKeys: String, CodingKey {
-        case display_text = "displayText"
+        case displayText = "display_text"
     }
 }

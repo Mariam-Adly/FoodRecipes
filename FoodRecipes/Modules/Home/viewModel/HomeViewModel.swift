@@ -10,25 +10,53 @@ class HomeVieModel{
     var mealsForCtegory = [Meal]()
     var bindedMealResult : (()->()) = {}
     let network = Network()
+    let categories: [Category] = [Category(name: "Popular", image: "fire",isSelected: true),Category(name: "Breakfast", image: "breakfast"),Category(name: "Lunch", image: "lunch-box"),Category(name: "Dinner", image: "dinner"),Category(name: "Dessert", image: "cake")]
     
-    func getHomeMealsByCategory(category:String){
+    func getHomeMealsByCategory(category:String,complitionHandler: @escaping ()-> Void){
         network.getMealsFromApi(url: "\(Constant.baseUrl)\(category)") { meals, error in
             if let meals = meals{
                 self.mealsForCtegory = meals
+         
+                complitionHandler()
                 DispatchQueue.main.async {
                     self.bindedMealResult()
                 }
             }
         }
     }
-    
-    func getMealByIndex(index:Int)->Meal{
-        
-        return mealsForCtegory[index]
-        
+    //
+    func getMealByIndex(index:Int) -> Meal{
+         mealsForCtegory[index]
     }
-    func getMealsCount()->Int
+
+    // MARK:
+    func getMealsCount()->Int {
+         mealsForCtegory.count
+    }
+
+    // MARK: - Get categories count
+    func getCategoriesCount() -> Int {
+        categories.count
+    }
+
+    // MARK: - Returns category
+    func getCategory(index:Int) -> Category {
+     categories[index]
+    }
+    
+    func checkIfItemSelected(index:Int)
     {
-        return mealsForCtegory.count
+       for category in categories
+        {
+           category.isSelected = false
+       
+       }
+        categories[index].isSelected = true
+    }
+    
+    
+    func resetTableView()
+    {
+        mealsForCtegory = []
     }
 }

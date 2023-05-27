@@ -13,7 +13,8 @@ class TopCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         backView.alpha = 1.0
-      //  setCellStyle(view: backView)
+        setImageStyle(image: categoryImage)
+
     }
 
     @IBOutlet weak var backView: UIView!
@@ -21,16 +22,25 @@ class TopCell: UICollectionViewCell {
     @IBOutlet weak var categoryName: UILabel!
     
     func configure(category:Category) {
+ 
+    }
+    
+    func setImageStyle(image:UIImageView) {
+  
+        image.layer.cornerRadius = image.frame.height/6
+      
+     }
+    func setUpCell(category: Category)
+    {
+      categoryName.text = category.name
+        categoryImage.image = UIImage(named: category.image ?? "")
         if(category.isSelected == true)
         {
             categoryImage.backgroundColor = UIColor(named: "orange")
         }
         else{
-            categoryImage.backgroundColor = UIColor(named: "orange")
+            categoryImage.backgroundColor = UIColor(named: "grey")
         }
     }
-    
-    
-    
   
 }

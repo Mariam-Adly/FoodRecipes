@@ -6,23 +6,27 @@
 //
 
 import Foundation
-class Meal:Codable{
+class Meal: Decodable{
     let name:String?
-    let show_id:Int?
+    let id:Int?
     let num_servings:Int?
-    var  credits : [credit]?
     var thumbnail_url: String?
     var video_url : String?
+    var sections: [Section]?
     var instructions: [Instruction]?
-    var tags: [Ingredient]
-    enum CodingKeys: String, CodingKey {
-            case name
-            case show_id = "mealId"
-            case thumbnail_url = "mealImageUrl"
-            case num_servings = "numberServing"
-            case credits
-            case video_url = "VideoUrl"
-            case instructions
-            case tags 
-       }
+ 
+//    enum CodingKeys: String, CodingKey {
+//            case name = "name"
+//            case show_id = "mealId"
+//            case thumbnail_url = "mealImageUrl"
+//            case num_servings = "numberServing"
+//            case video_url = "VideoUrl"
+//        
+//       }
+    
 }
+
+
+
+
+

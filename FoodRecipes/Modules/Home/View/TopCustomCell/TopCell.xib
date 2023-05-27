@@ -20,27 +20,27 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aG-1k-OX8">
                         <rect key="frame" x="-1" y="-0.6666666666666714" width="162" height="211.33333333333337"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ii-wS-lPG">
-                                <rect key="frame" x="13" y="11.666666666666671" width="129.66666666666666" height="148"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ii-wS-lPG">
+                                <rect key="frame" x="16.333333333333329" y="20.000000000000007" width="129.33333333333337" height="105.66666666666669"/>
                                 <color key="tintColor" red="0.96078437569999997" green="0.96078437569999997" blue="0.96078437569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmv-ZY-N97">
-                                <rect key="frame" x="0.0" y="169.66666666666666" width="155.33333333333334" height="22.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <rect key="frame" x="1" y="135.66666666666666" width="160" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="centerY" secondItem="6aG-1k-OX8" secondAttribute="centerY" constant="-20" id="Acv-Xj-HnG"/>
-                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="height" secondItem="6aG-1k-OX8" secondAttribute="height" multiplier="0.7" id="LEa-bh-TBq"/>
-                            <constraint firstItem="kmv-ZY-N97" firstAttribute="width" secondItem="2Ii-wS-lPG" secondAttribute="width" multiplier="1.2" id="Orv-Rr-O6L"/>
-                            <constraint firstItem="kmv-ZY-N97" firstAttribute="centerX" secondItem="2Ii-wS-lPG" secondAttribute="centerX" id="Q2N-Z2-ho9"/>
-                            <constraint firstItem="kmv-ZY-N97" firstAttribute="height" secondItem="2Ii-wS-lPG" secondAttribute="height" multiplier="0.152913" id="c6G-Sr-q5Z"/>
-                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="width" secondItem="6aG-1k-OX8" secondAttribute="width" multiplier="0.8" id="gmj-C3-0ae"/>
-                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="leading" secondItem="6aG-1k-OX8" secondAttribute="leading" constant="13" id="iDi-8B-wEQ"/>
-                            <constraint firstItem="kmv-ZY-N97" firstAttribute="top" secondItem="2Ii-wS-lPG" secondAttribute="bottom" constant="10" id="wrg-wx-WUc"/>
+                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="height" secondItem="6aG-1k-OX8" secondAttribute="height" multiplier="0.5" id="4Cf-pW-zNy"/>
+                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="width" secondItem="6aG-1k-OX8" secondAttribute="width" multiplier="0.8" id="FKK-Kh-wTz"/>
+                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="centerX" secondItem="6aG-1k-OX8" secondAttribute="centerX" id="KtT-b9-xew"/>
+                            <constraint firstItem="kmv-ZY-N97" firstAttribute="centerX" secondItem="2Ii-wS-lPG" secondAttribute="centerX" id="L28-xm-zhg"/>
+                            <constraint firstItem="kmv-ZY-N97" firstAttribute="leading" secondItem="6aG-1k-OX8" secondAttribute="leading" constant="1" id="SEL-RI-lzr"/>
+                            <constraint firstItem="kmv-ZY-N97" firstAttribute="top" secondItem="2Ii-wS-lPG" secondAttribute="bottom" constant="9.9999999999999716" id="X6w-Aw-IkT"/>
+                            <constraint firstItem="2Ii-wS-lPG" firstAttribute="top" secondItem="6aG-1k-OX8" secondAttribute="top" constant="20" symbolic="YES" id="c9v-cH-4Mm"/>
+                            <constraint firstAttribute="trailing" secondItem="kmv-ZY-N97" secondAttribute="trailing" constant="1" id="md2-aJ-lLN"/>
                         </constraints>
                     </view>
                 </subviews>

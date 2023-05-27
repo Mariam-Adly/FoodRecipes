@@ -15,7 +15,7 @@ class Category {
     init(name:String, image:String, isSelected:Bool=false)
       {
           self.image = image
-          self.isSelected = false
+          self.isSelected = isSelected
           self.name = name
       }
 }
