@@ -48,7 +48,7 @@ extension FavoriteViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = favoriteTableView.dequeueReusableCell(withIdentifier: "RecipeCell", for: indexPath) as! CategoriesCellTableViewCell
         let data = favoritesMeals![indexPath.row]
-        cell.setUpCell(mealName: data.mealName, chefName: data.mealChef, foodType: data.foodType, foodRate: data.rate)
+//        cell.setUpCell(mealName: data.mealName, chefName: data.mealChef, foodType: data.foodType, foodRate: data.rate, data)
         return cell
     }
 
