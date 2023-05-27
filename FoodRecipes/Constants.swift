@@ -8,4 +8,5 @@
 import Foundation
 struct Constant{
     static let baseUrl = "https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags="
+    static let videoCellIdentifier = "videoCell"
 }
