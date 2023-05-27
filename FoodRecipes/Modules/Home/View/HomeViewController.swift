@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         collectionView.register(UINib(nibName: "TopCell", bundle: nil), forCellWithReuseIdentifier: "cell")
         tableView.register(UINib(nibName: "CategoriesCellTableViewCell", bundle: nil), forCellReuseIdentifier: "CategoriesCellTableViewCell")
-        // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
         collectionView.dataSource = self
@@ -30,21 +29,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        return viewModel.getMealsCount()
     }
     
 
