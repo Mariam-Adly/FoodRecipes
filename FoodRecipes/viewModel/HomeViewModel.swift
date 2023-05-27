@@ -21,4 +21,14 @@ class HomeVieModel{
             }
         }
     }
+    
+    func getMealByIndex(index:Int)->Meal{
+        
+        return mealsForCtegory[index]
+        
+    }
+    func getMealsCount()->Int
+    {
+        return mealsForCtegory.count
+    }
 }
