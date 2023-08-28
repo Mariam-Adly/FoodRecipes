@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class MealModel:Codable{
+class MealModel:Decodable{
     let count:Int?
     let results:[Meal]?
 }

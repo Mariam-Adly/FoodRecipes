@@ -38,9 +38,15 @@
 		8CEB06F72A2243A700648D42 /* SimillarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB06F52A2243A700648D42 /* SimillarCollectionViewCell.xib */; };
 		8CF8848B2A20E16800D7CB7F /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8848A2A20E16800D7CB7F /* MealModel.swift */; };
 		8CF8848F2A20E49000D7CB7F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8848E2A20E49000D7CB7F /* Network.swift */; };
+		BC1B2AD82A2211DD00E13BB1 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B2AD72A2211DD00E13BB1 /* Ingredient.swift */; };
+		BC1B2ADA2A2211FD00E13BB1 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B2AD92A2211FD00E13BB1 /* Component.swift */; };
+		BC1B2ADC2A22123F00E13BB1 /* MealMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B2ADB2A22123F00E13BB1 /* MealMeasurement.swift */; };
+		BC1B2ADE2A22126500E13BB1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B2ADD2A22126500E13BB1 /* Section.swift */; };
+		BC1B2AE02A2219C900E13BB1 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B2ADF2A2219C900E13BB1 /* DetailsViewModel.swift */; };
+		BC1B2AE22A223AB800E13BB1 /* CategoriesCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1B2AE12A223AB800E13BB1 /* CategoriesCellTableViewCell.xib */; };
+		BC419A9A2A224AE100AD1928 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = BC419A992A224AE100AD1928 /* loading.json */; };
 		BCA5C1FA2A20E0AE0012CC5E /* TopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA5C1F82A20E0AE0012CC5E /* TopCell.swift */; };
 		BCA5C1FB2A20E0AE0012CC5E /* TopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA5C1F92A20E0AE0012CC5E /* TopCell.xib */; };
-		BCBE7BB02A212723008FE227 /* CategoriesCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBE7BAF2A212723008FE227 /* CategoriesCellTableViewCell.xib */; };
 		BCBE7BB22A21272C008FE227 /* CategoriesCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE7BB12A21272C008FE227 /* CategoriesCellTableViewCell.swift */; };
 		BCFE5AFB2A20E31A008CC802 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFE5AFA2A20E31A008CC802 /* Style.swift */; };
 		BCFE5B002A20E3CE008CC802 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCFE5AFE2A20E3CE008CC802 /* HomeViewController.xib */; };
@@ -111,9 +117,15 @@
 		8CF8848A2A20E16800D7CB7F /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
 		8CF8848E2A20E49000D7CB7F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		9493F5C03B508FD803126881 /* Pods-FoodRecipes-FoodRecipesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodRecipes-FoodRecipesUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodRecipes-FoodRecipesUITests/Pods-FoodRecipes-FoodRecipesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC1B2AD72A2211DD00E13BB1 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		BC1B2AD92A2211FD00E13BB1 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		BC1B2ADB2A22123F00E13BB1 /* MealMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMeasurement.swift; sourceTree = "<group>"; };
+		BC1B2ADD2A22126500E13BB1 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		BC1B2ADF2A2219C900E13BB1 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		BC1B2AE12A223AB800E13BB1 /* CategoriesCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesCellTableViewCell.xib; sourceTree = "<group>"; };
+		BC419A992A224AE100AD1928 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		BCA5C1F82A20E0AE0012CC5E /* TopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCell.swift; sourceTree = "<group>"; };
 		BCA5C1F92A20E0AE0012CC5E /* TopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopCell.xib; sourceTree = "<group>"; };
-		BCBE7BAF2A212723008FE227 /* CategoriesCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoriesCellTableViewCell.xib; path = FoodRecipes/CategoriesCell/CategoriesCellTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		BCBE7BB12A21272C008FE227 /* CategoriesCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesCellTableViewCell.swift; path = FoodRecipes/CategoriesCell/CategoriesCellTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		BCFE5AFA2A20E31A008CC802 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		BCFE5AFE2A20E3CE008CC802 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -199,16 +211,15 @@
 		442F3CAE2A20D0B400CAAAE3 /* FoodRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				BC419A9B2A224D6000AD1928 /* Resources */,
 				8CF8848C2A20E46600D7CB7F /* Services */,
 				8CF884892A20E11D00D7CB7F /* Models */,
 				44ABFE3E2A20DA94001CE419 /* FavoriteScreen */,
-				44ABFE372A20D766001CE419 /* CategoriesCell */,
 				BCFE5AFC2A20E36B008CC802 /* Modules */,
 				BCFE5AF92A20E304008CC802 /* Utilities */,
 				442F3CAF2A20D0B400CAAAE3 /* AppDelegate.swift */,
 				442F3CB12A20D0B400CAAAE3 /* SceneDelegate.swift */,
 				442F3CB32A20D0B400CAAAE3 /* ViewController.swift */,
-				442F3CBB2A20D0B600CAAAE3 /* Assets.xcassets */,
 				442F3CBD2A20D0B600CAAAE3 /* LaunchScreen.storyboard */,
 				442F3CC02A20D0B600CAAAE3 /* Info.plist */,
 				442F3CB82A20D0B400CAAAE3 /* FoodRecipes.xcdatamodeld */,
@@ -233,16 +244,6 @@
 				442F3CD52A20D0B600CAAAE3 /* FoodRecipesUITestsLaunchTests.swift */,
 			);
 			path = FoodRecipesUITests;
-			sourceTree = "<group>";
-		};
-		44ABFE372A20D766001CE419 /* CategoriesCell */ = {
-			isa = PBXGroup;
-			children = (
-				BCBE7BB12A21272C008FE227 /* CategoriesCellTableViewCell.swift */,
-				BCBE7BAF2A212723008FE227 /* CategoriesCellTableViewCell.xib */,
-			);
-			name = CategoriesCell;
-			path = ../../../CategoriesCell;
 			sourceTree = "<group>";
 		};
 		44ABFE3E2A20DA94001CE419 /* FavoriteScreen */ = {
@@ -302,8 +303,11 @@
 				8C4344DF2A21102C001E499C /* Meal.swift */,
 				8C4344E12A211061001E499C /* Credit.swift */,
 				8C4344E32A211085001E499C /* Instruction.swift */,
-				8C4344E52A2110DA001E499C /* Ingredients.swift */,
 				BCFF17462A20E9E000F58A03 /* Categories.swift */,
+				BC1B2AD72A2211DD00E13BB1 /* Ingredient.swift */,
+				BC1B2AD92A2211FD00E13BB1 /* Component.swift */,
+				BC1B2ADB2A22123F00E13BB1 /* MealMeasurement.swift */,
+				BC1B2ADD2A22126500E13BB1 /* Section.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -323,6 +327,24 @@
 				8CF8848E2A20E49000D7CB7F /* Network.swift */,
 			);
 			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		BC419A9B2A224D6000AD1928 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				442F3CBB2A20D0B600CAAAE3 /* Assets.xcassets */,
+				BC419A992A224AE100AD1928 /* loading.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC74A5912A21F5280080B85B /* CategoriesCell */ = {
+			isa = PBXGroup;
+			children = (
+				BCBE7BB12A21272C008FE227 /* CategoriesCellTableViewCell.swift */,
+				BC1B2AE12A223AB800E13BB1 /* CategoriesCellTableViewCell.xib */,
+			);
+			path = CategoriesCell;
 			sourceTree = "<group>";
 		};
 		BCA5C1F72A20E0990012CC5E /* TopCustomCell */ = {
@@ -347,6 +369,7 @@
 			children = (
 				8CC4B7442A21ED00002D60F2 /* Deatils */,
 				BCFF17452A20E7C600F58A03 /* Home */,
+				BC1B2ADF2A2219C900E13BB1 /* DetailsViewModel.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -354,6 +377,7 @@
 		BCFE5B012A20E3D9008CC802 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BC74A5912A21F5280080B85B /* CategoriesCell */,
 				BCA5C1F72A20E0990012CC5E /* TopCustomCell */,
 				BCFE5AFE2A20E3CE008CC802 /* HomeViewController.xib */,
 				BCFF17432A20E6E500F58A03 /* HomeViewController.swift */,
@@ -381,7 +405,7 @@
 				442F3CA82A20D0B400CAAAE3 /* Sources */,
 				442F3CA92A20D0B400CAAAE3 /* Frameworks */,
 				442F3CAA2A20D0B400CAAAE3 /* Resources */,
-				DA311E58563016AB2D96CBB9 /* [CP] Embed Pods Frameworks */,
+				0E7B26C3A9D4659CAAE8D326 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -419,7 +443,7 @@
 				442F3CCB2A20D0B600CAAAE3 /* Sources */,
 				442F3CCC2A20D0B600CAAAE3 /* Frameworks */,
 				442F3CCD2A20D0B600CAAAE3 /* Resources */,
-				8DDB50F33E1358C65E3891AB /* [CP] Embed Pods Frameworks */,
+				13D7479033A6735EAF7502B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -483,13 +507,14 @@
 				8CC4B7492A21ED38002D60F2 /* DetailsViewController.xib in Resources */,
 				8CEB06F72A2243A700648D42 /* SimillarCollectionViewCell.xib in Resources */,
 				8CC4B7532A21F33B002D60F2 /* VideoTableViewCell.xib in Resources */,
+				BC1B2AE22A223AB800E13BB1 /* CategoriesCellTableViewCell.xib in Resources */,
 				442F3CBF2A20D0B600CAAAE3 /* LaunchScreen.storyboard in Resources */,
 				BCA5C1FB2A20E0AE0012CC5E /* TopCell.xib in Resources */,
 				442F3CBC2A20D0B600CAAAE3 /* Assets.xcassets in Resources */,
 				8CEB06E92A2226AB00648D42 /* SectionHeader.xib in Resources */,
+				BC419A9A2A224AE100AD1928 /* loading.json in Resources */,
 				BCFE5B002A20E3CE008CC802 /* HomeViewController.xib in Resources */,
 				44ABFE442A20DADA001CE419 /* FavoriteViewController.xib in Resources */,
-				BCBE7BB02A212723008FE227 /* CategoriesCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +535,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0E7B26C3A9D4659CAAE8D326 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes/Pods-FoodRecipes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes/Pods-FoodRecipes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes/Pods-FoodRecipes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13D7479033A6735EAF7502B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes-FoodRecipesUITests/Pods-FoodRecipes-FoodRecipesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes-FoodRecipesUITests/Pods-FoodRecipes-FoodRecipesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes-FoodRecipesUITests/Pods-FoodRecipes-FoodRecipesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2AD48B0E2C953BF96F966C12 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -530,23 +589,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8DDB50F33E1358C65E3891AB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes-FoodRecipesUITests/Pods-FoodRecipes-FoodRecipesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes-FoodRecipesUITests/Pods-FoodRecipes-FoodRecipesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes-FoodRecipesUITests/Pods-FoodRecipes-FoodRecipesUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		93B4EA25D70AE85B723EC59D /* [CP] Check Pods Manifest.lock */ = {
@@ -593,23 +635,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DA311E58563016AB2D96CBB9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes/Pods-FoodRecipes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes/Pods-FoodRecipes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodRecipes/Pods-FoodRecipes-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -624,18 +649,23 @@
 				8C4344DE2A210ECB001E499C /* DataBase.swift in Sources */,
 				BCBE7BB22A21272C008FE227 /* CategoriesCellTableViewCell.swift in Sources */,
 				8CC4B7522A21F33B002D60F2 /* VideoTableViewCell.swift in Sources */,
+				BC1B2AD82A2211DD00E13BB1 /* Ingredient.swift in Sources */,
 				442F3CB02A20D0B400CAAAE3 /* AppDelegate.swift in Sources */,
 				8CEB06F62A2243A700648D42 /* SimillarCollectionViewCell.swift in Sources */,
 				8C4344E62A2110DA001E499C /* Ingredients.swift in Sources */,
+				BC1B2ADC2A22123F00E13BB1 /* MealMeasurement.swift in Sources */,
+				BC1B2ADE2A22126500E13BB1 /* Section.swift in Sources */,
 				8C4344CF2A20F78C001E499C /* HomeViewModel.swift in Sources */,
 				BCFF17442A20E6E500F58A03 /* HomeViewController.swift in Sources */,
 				442F3CB22A20D0B400CAAAE3 /* SceneDelegate.swift in Sources */,
 				8CF8848B2A20E16800D7CB7F /* MealModel.swift in Sources */,
 				8CF8848F2A20E49000D7CB7F /* Network.swift in Sources */,
 				8C4344E22A211061001E499C /* Credit.swift in Sources */,
+				BC1B2ADA2A2211FD00E13BB1 /* Component.swift in Sources */,
 				442F3CBA2A20D0B400CAAAE3 /* FoodRecipes.xcdatamodeld in Sources */,
 				8CEB06EE2A2230E000648D42 /* SimmilarMealCell.swift in Sources */,
 				8C4344D12A20F982001E499C /* Constants.swift in Sources */,
+				BC1B2AE02A2219C900E13BB1 /* DetailsViewModel.swift in Sources */,
 				8C4344E42A211085001E499C /* Instruction.swift in Sources */,
 				8C4344D32A210219001E499C /* TabBar.swift in Sources */,
 				BCFF17472A20E9E000F58A03 /* Categories.swift in Sources */,

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="FoodRecipes" customModuleProvider="target">
             <connections>
+                <outlet property="animationView" destination="cat-em-yqx" id="Ad1-hv-98b"/>
                 <outlet property="collectionView" destination="Rwb-dR-oF3" id="sPX-Xj-Bvl"/>
                 <outlet property="tableView" destination="MtW-d3-jrR" id="snQ-4x-2Pn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -20,42 +21,63 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGm-At-0YJ">
-                    <rect key="frame" x="20" y="135" width="83" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGm-At-0YJ">
+                    <rect key="frame" x="10" y="150" width="103.33333333333333" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.32549019607843138" green="0.32549023630000001" blue="0.32549023630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MtW-d3-jrR">
-                    <rect key="frame" x="0.0" y="307" width="393" height="545"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="220" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MtW-d3-jrR">
+                    <rect key="frame" x="0.0" y="307" width="393" height="511"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </tableView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rwb-dR-oF3">
-                    <rect key="frame" x="0.0" y="189" width="393" height="110"/>
+                    <rect key="frame" x="10" y="177" width="367" height="122"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="110" id="pbJ-uY-wmH"/>
+                        <constraint firstAttribute="height" constant="122" id="pbJ-uY-wmH"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NqC-sG-CcP">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NqC-sG-CcP">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cat-em-yqx" customClass="LottieAnimationView" customModule="Lottie">
+                    <rect key="frame" x="42" y="376" width="302" height="315"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loading"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTI-TQ-9Ft">
+                    <rect key="frame" x="16" y="111.33333333333333" width="353" height="28.666666666666671"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" red="0.32549023630000001" green="0.32549023630000001" blue="0.32549023630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Rwb-dR-oF3" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="ATM-on-DCc"/>
-                <constraint firstItem="Rwb-dR-oF3" firstAttribute="top" secondItem="VGm-At-0YJ" secondAttribute="bottom" constant="33" id="AVK-op-5PH"/>
+                <constraint firstItem="Rwb-dR-oF3" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" constant="-26" id="ATM-on-DCc"/>
+                <constraint firstItem="Rwb-dR-oF3" firstAttribute="top" secondItem="VGm-At-0YJ" secondAttribute="bottom" constant="3" id="AVK-op-5PH"/>
                 <constraint firstItem="MtW-d3-jrR" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="AhI-eg-dcY"/>
-                <constraint firstItem="Rwb-dR-oF3" firstAttribute="leading" secondItem="MtW-d3-jrR" secondAttribute="trailing" constant="-393" id="D6c-v6-ik9"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MtW-d3-jrR" secondAttribute="bottom" constant="-34" id="E8x-0b-XJs"/>
+                <constraint firstItem="cat-em-yqx" firstAttribute="top" secondItem="Rwb-dR-oF3" secondAttribute="bottom" constant="77" id="B8a-eF-Yra"/>
+                <constraint firstItem="Rwb-dR-oF3" firstAttribute="leading" secondItem="MtW-d3-jrR" secondAttribute="trailing" constant="-383" id="D6c-v6-ik9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MtW-d3-jrR" secondAttribute="bottom" id="E8x-0b-XJs"/>
+                <constraint firstItem="cat-em-yqx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="42" id="Ezi-ll-LAT"/>
+                <constraint firstItem="MtW-d3-jrR" firstAttribute="top" secondItem="cat-em-yqx" secondAttribute="bottom" constant="-384" id="H3N-YU-gmJ"/>
+                <constraint firstItem="VGm-At-0YJ" firstAttribute="top" secondItem="tTI-TQ-9Ft" secondAttribute="bottom" constant="10" id="K9Z-2l-Mz1"/>
                 <constraint firstItem="MtW-d3-jrR" firstAttribute="top" secondItem="Rwb-dR-oF3" secondAttribute="bottom" constant="8" id="MlF-vg-lfy"/>
-                <constraint firstItem="MtW-d3-jrR" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.6" constant="33.800000000000011" id="Z0m-AC-Qbb"/>
-                <constraint firstItem="VGm-At-0YJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="j5H-OJ-ZGK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cat-em-yqx" secondAttribute="trailing" constant="49" id="T8M-5g-1z2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tTI-TQ-9Ft" secondAttribute="trailing" constant="24" id="Yeo-eP-vBF"/>
+                <constraint firstItem="MtW-d3-jrR" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.6" constant="-0.19999999999998863" id="Z0m-AC-Qbb"/>
+                <constraint firstItem="VGm-At-0YJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="j5H-OJ-ZGK"/>
                 <constraint firstItem="MtW-d3-jrR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="mH2-vY-haY"/>
+                <constraint firstItem="tTI-TQ-9Ft" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="mYo-Io-xwK"/>
             </constraints>
             <point key="canvasLocation" x="113.74045801526717" y="-11.267605633802818"/>
         </view>
