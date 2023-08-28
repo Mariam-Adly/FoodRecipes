@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="214" id="veh-Qr-8Vr" customClass="CategoriesCellTableViewCell" customModule="FoodRecipe" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="214" id="veh-Qr-8Vr" customClass="CategoriesCellTableViewCell" customModule="FoodRecipes" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="veh-Qr-8Vr" id="hDJ-aI-ju5">
@@ -43,7 +43,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cJP-ZU-mCt">
-                                        <rect key="frame" x="232" y="122.00000000000003" width="89" height="41.333333333333343"/>
+                                        <rect key="frame" x="232" y="122.00000000000001" width="89" height="41.333333333333329"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ems-CR-qhE">
                                                 <rect key="frame" x="0.0" y="0.0" width="89" height="15.666666666666666"/>
@@ -126,6 +126,7 @@
                 <outlet property="favBtn" destination="efT-hI-aCb" id="5ws-q7-IdQ"/>
                 <outlet property="foodRate" destination="Rnm-lh-fM3" id="bDr-13-4ac"/>
                 <outlet property="foodType" destination="cm8-yu-DBF" id="N82-pE-Y6o"/>
+                <outlet property="mealImage" destination="xcL-6o-9yV" id="cHh-Co-iLj"/>
                 <outlet property="mealName" destination="g88-88-FzE" id="zZC-zi-ZYq"/>
             </connections>
             <point key="canvasLocation" x="180.15267175572518" y="47.183098591549296"/>

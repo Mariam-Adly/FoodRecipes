@@ -7,10 +7,10 @@
 
 import Foundation
 class Ingredient : Codable{
-    var display_name: String?
+    var displayName: String?
     var type: String?
     enum CodingKeys: String, CodingKey {
-        case display_name = "displayName"
+        case displayName = "display_name"
         case type
     }
 }

@@ -9,6 +9,7 @@ import UIKit
 
 class CategoriesCellTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var mealImage: UIImageView!
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var foodRate: UILabel!
     @IBOutlet weak var foodType: UILabel!
@@ -38,12 +39,20 @@ class CategoriesCellTableViewCell: UITableViewCell {
     }
     
 
-    func configCell(meal:Meal)
-    {
-        mealName.text = meal.name
-        foodRate.text = String("servings:\(meal.num_servings)")
+    func configCell(meal:Meal,isFav:Bool) {
+        self.mealName.text = meal.name ?? ""
+        self.chefName.text = meal.credits?[0].name ?? ""
+        self.foodType.text = meal.credits?[0].type ?? ""
+        self.foodRate.text = String(meal.numberServing ?? 0)
+    
+        if isFav{
+                favBtn.setImage(UIImage(named: "Vector3"), for: UIControl.State.normal)
+            }else{
+               favBtn.setImage(UIImage(named: "Vector2"), for: UIControl.State.normal)
+        }
     }
     @IBAction func favBtnAction(_ sender: Any) {
+        
     }
 //    override func layoutSubviews() {
 //        super.layoutSubviews()

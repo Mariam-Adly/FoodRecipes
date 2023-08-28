@@ -13,7 +13,7 @@ class Network{
         "X-RapidAPI-Key": "f4e14f0c71msh56b275f47a33083p1bf7d4jsn2d94b368718d",
         "X-RapidAPI-Host": "tasty.p.rapidapi.com"
     ]
-    func getMealsFromApi(url:String,completionHandler:@escaping([Meal]? , Error?)-> Void){
+    func getMealsFromApi(url:String,completionHandler:@escaping([Meal]?)-> Void){
         AF.request("https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=breakfast",method: .get,headers: headers)
             .validate().response { resp in
                 switch resp.result{
@@ -22,7 +22,7 @@ class Network{
                         if let data = data{
                             let jsonData =  try JSONDecoder().decode(MealModel.self, from: data)
                             if let results = jsonData.results{
-                                completionHandler(results,nil)
+                                completionHandler(results)
                             }
                         }
                     }catch{
@@ -30,7 +30,7 @@ class Network{
                     }
                 case .failure(let error):
                     print(error.localizedDescription)
-                    completionHandler(nil,error)
+                    completionHandler(nil)
                 }
             }
     }

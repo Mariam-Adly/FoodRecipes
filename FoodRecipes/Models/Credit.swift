@@ -9,4 +9,8 @@ import Foundation
 class credit : Codable{
     var name: String?
     var type: String?
+    init(name: String? = nil, type: String? = nil) {
+        self.name = name
+        self.type = type
+    }
 }

@@ -6,23 +6,38 @@
 //
 
 import Foundation
+import SDWebImage
+
 class Meal:Codable{
     let name:String?
-    let show_id:Int?
-    let num_servings:Int?
-    var  credits : [credit]?
-    var thumbnail_url: String?
-    var video_url : String?
+    let mealId:Int?
+    let numberServing:Int?
+    var credits : [credit]?
+    var mealImageUrl: String?
+    var videoUrl : String?
     var instructions: [Instruction]?
-    var tags: [Ingredient]
+    var tags: [Ingredient]?
+   // var isFav: Bool?
     enum CodingKeys: String, CodingKey {
             case name
-            case show_id = "mealId"
-            case thumbnail_url = "mealImageUrl"
-            case num_servings = "numberServing"
+            case mealId = "id"
+            case mealImageUrl = "thumbnail_url"
+            case numberServing = "num_servings"
             case credits
-            case video_url = "VideoUrl"
+            case videoUrl = "video_url"
             case instructions
             case tags 
        }
+    
+    init(name: String?, mealId: Int?, numberServing: Int?, credits: [credit]? = nil, mealImageUrl: String? = nil, videoUrl: String? = nil, instructions: [Instruction]? = nil, tags: [Ingredient]? = nil) {
+        self.name = name
+        self.mealId = mealId
+        self.numberServing = numberServing
+        self.credits = credits
+        self.mealImageUrl = mealImageUrl
+        self.videoUrl = videoUrl
+        self.instructions = instructions
+        self.tags = tags
+        
+    }
 }

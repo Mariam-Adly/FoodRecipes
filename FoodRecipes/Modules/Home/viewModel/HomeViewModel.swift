@@ -31,4 +31,12 @@ class HomeVieModel{
     {
         return mealsForCtegory.count
     }
+    
+    func saveToCoreData(meal:Meal){
+        DataBase.coreData.saveMeal(meal: meal)
+    }
+    
+    func isFavouriteMeal(meal:Meal) -> Bool {
+        return DataBase.coreData.mealIsFav(meal: meal)
+    }
 }

@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     let viewModel = HomeVieModel()
+    var meal:Meal?
     let categories: [Category] = [Category(name: "Popular", image: "fire",isSelected: true),Category(name: "Breakfast", image: "breakfast"),Category(name: "Lunch", image: "lunch-box"),Category(name: "Dinner", image: "dinner"),Category(name: "Dessert", image: "cake")]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
 
+
 }
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource
 {
@@ -41,10 +43,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriesCellTableViewCell") as! CategoriesCellTableViewCell
         
-        let meal = viewModel.getMealByIndex(index: indexPath.row)
-        cell.configCell(meal: meal)
-      //  checkIfItemSelected(index: indexPath.row)
-        
+        meal = viewModel.getMealByIndex(index: indexPath.row)
+        cell.configCell(meal: meal!,
+                        isFav: viewModel.isFavouriteMeal(meal: viewModel.getMealByIndex(index: indexPath.row)))
+        cell.favBtn.tag = indexPath.row
+        cell.favBtn.addTarget(self, action: #selector(addToFav), for: .touchUpInside)
+        print(viewModel.isFavouriteMeal(meal:  viewModel.getMealByIndex(index: indexPath.row)), meal?.mealId)
         return cell
     }
     
@@ -52,6 +56,23 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 220
     }
+    
+    @objc func addToFav(sender:UIButton){
+        let index = IndexPath(row: sender.tag, section: 0)
+        let cell = tableView.cellForRow(at: NSIndexPath(row: sender.tag, section: 0) as IndexPath) as! CategoriesCellTableViewCell
+//        if let favMeal = viewModel.getMealByIndex(index: index.row) {
+            if viewModel.isFavouriteMeal(meal: viewModel.getMealByIndex(index: index.row)) == false {
+                print(meal?.name)
+                var image = cell.mealImage.image?.jpegData(compressionQuality: 1.0)
+                viewModel.saveToCoreData(meal:meal ?? Meal(name: "", mealId: 0, numberServing: 0))
+                cell.favBtn.setImage(UIImage(named: "Vector3"), for: UIControl.State.normal)
+            }else{
+                
+               cell.favBtn.setImage(UIImage(named: "Vector2"), for: UIControl.State.normal)
+            }
+        }
+        
+//    }
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout
@@ -65,6 +86,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.categoryName.text = categories[indexPath.row].name
         cell.categoryImage.image = UIImage(named: categories[indexPath.row].image ?? "")
         cell.configure(category: categories[indexPath.row])
+    
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
