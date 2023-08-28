@@ -38,7 +38,7 @@ class TabBar: UITabBarController {
     
     func setupVCs() {
            viewControllers = [
-            createNavController(for: DetailsViewController(nibName: "DetailsViewController", bundle: nil), title: "", image: UIImage(named: "homeSelcted")!),
+//            createNavController(for: DetailsViewController(nibName: "DetailsViewController", bundle: nil), title: "", image: UIImage(named: "homeSelcted")!),
                createNavController(for: HomeViewController(nibName: "HomeViewController", bundle: nil)  ,title: NSLocalizedString("", comment: ""), image: UIImage(named: "homeSelcted")!),
                createNavController(for: FavoriteViewController(nibName: "FavoriteViewController", bundle: nil) , title: NSLocalizedString("", comment: ""), image: UIImage(named: "favUnSelected" )!),
              
